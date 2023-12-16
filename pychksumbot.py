@@ -32,4 +32,4 @@ urls = ['https://en.wikipedia.org',
         'https://de.wikipedia.org']
 for url in urls:
     urlhash = get_hash(url)
-    put_hash(url,urlhash)
+    print(url,urlhash)
