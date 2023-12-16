@@ -1,0 +1,12 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: pychksumbot
+spec:
+  template:
+    spec:
+      containers:
+      - name: pychksumbot
+        image: wkandek/pychksumbot:latest
+      restartPolicy: Never
+  backoffLimit: 4
